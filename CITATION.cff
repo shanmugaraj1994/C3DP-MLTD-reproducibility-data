@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite it as below."
+title: "Reproducibility package for MLTD-based buildability failure prediction"
+type: dataset
+authors:
+  - family-names: "Senthilnathan"
+    given-names: "Shanmugaraj"
+    orcid: "https://orcid.org/0000-0002-5725-0698"
+  - family-names: "Raphael"
+    given-names: "Benny"
+    orcid: "https://orcid.org/0000-0002-9957-7699"
+version: 1.0.0
+date-released: 2026-09-18
+repository-code: "https://github.com/YOUR-USERNAME/C3DP-MLTD-reproducibility-data"
+license: "CC-BY-4.0"
