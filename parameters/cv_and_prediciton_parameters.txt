@@ -1,0 +1,12 @@
+Number of thickness sampling positions: 30
+Gaussian filter kernel: 15×15 
+Canny lower threshold: 15-20 #only value which is user-defined
+Canny upper threshold: 20-30 #only value which is user-defined
+Hough rho resolution: 1 pixel
+Hough theta resolution: pi/180
+Hough accumulator threshold: 100
+Minimum line length: 200
+Maximum line gap: 300
+Monitored layers: L03-L10
+MLTD-slope LBV: 2.42
+Severity margin: 1

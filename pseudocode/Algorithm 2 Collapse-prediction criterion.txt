@@ -1,0 +1,41 @@
+INPUT:
+    Last-two-point MLTD slopes S_i(tj)
+    System-specific limiting boundary value LBV
+    Severity margin M = 1
+    Required persistence length P
+
+OUTPUT:
+    Stable or collapse-prone classification
+    First warning snapshot and warning time
+
+1. Initialize consecutive_exceedances = 0.
+
+2. For each monitored layer and each new snapshot Xj:
+
+      a. Calculate S_i(tj).
+
+      b. If S_i(tj) > LBV:
+             consecutive_exceedances =
+                 consecutive_exceedances + 1
+         Else:
+             consecutive_exceedances = 0
+
+      c. Calculate severity:
+             severity = S_i(tj) - LBV
+
+      d. Classify the condition as collapse-prone if either:
+
+             severity > M
+
+         OR
+
+             consecutive_exceedances >= P
+
+      e. If collapse-prone:
+             Record the first warning snapshot.
+             Record the corresponding printing time.
+             Report supervisory corrective-action guidance.
+             Stop evaluation or continue monitoring, depending on use case.
+
+3. If neither condition is satisfied before print completion:
+      Classify the print as stable within the investigated target height.
