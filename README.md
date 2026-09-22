@@ -9,9 +9,6 @@ Supporting manuscript: "Buildability Failure Prediction and Supervisory Decision
 - `pseudocode/`: image-processing and cumulative collapse-warning procedures.
 - `parameters/cv_and_prediction_parameters.txt`: processing and warning settings.
 
-## Reading the CSV files
-`snapshot` preserves the number recorded in the source workbook. Columns `L03_MLTD_fraction` through `L10_MLTD_fraction` contain dimensionless fractional MLTD values. Stable data cover snapshots 3-32; collapsed data cover snapshots 3-20. 
-
 ## Software
 The described workflow uses Python, OpenCV, NumPy, pandas, Pillow, and the pretrained U2-Net full model. 
 
