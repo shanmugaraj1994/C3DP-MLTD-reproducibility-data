@@ -1,0 +1,25 @@
+Algorithm 2: Cumulative collapse-risk warning
+
+INPUT:
+    One defined monitored MLTD sequence and its snapshot numbers
+    Incremental slopes S[j], in percentage points per deposition interval
+    LBV = 2.42; severity margin M = 1
+    Acquisition times, if warning time in seconds is required
+
+OUTPUT:
+    First collapse-risk warning snapshot
+    Warning time, only if acquisition times are known
+
+1. Initialize cumulative_exceedances = 0 once at the start of the sequence.
+2. For each new valid one-interval incremental slope S[j]:
+      If S[j] > LBV:
+          cumulative_exceedances = cumulative_exceedances + 1
+      Otherwise:
+          Leave cumulative_exceedances unchanged.
+
+      If (S[j] - LBV > M) OR (cumulative_exceedances > 1):
+          Record the first collapse-risk warning snapshot.
+          Record its acquisition time if available.
+          Report the recommended printing-speed reduction of 10 mm/s.
+          Stop this first-warning calculation.
+3. If no condition is met, report no warning within the evaluated sequence.

@@ -1,0 +1,16 @@
+Number of thickness sampling positions: 30
+Gaussian filter kernel: 5 x 5
+Canny lower threshold: 20
+Canny upper threshold: 30
+Hough rho resolution: 1 pixel
+Hough theta resolution: pi/180 radians
+Hough accumulator threshold: 100
+Hough minimum line length: two-thirds of the segmented-image width
+Hough maximum gap: 5 pixels
+Layer crop margin: 50 pixels above and below each detected boundary (as described in the manuscript)
+Monitored layers: L03-L10
+MLTD data storage: fractions; multiply by 100 for percentage values
+MLTD-slope LBV: 2.42
+Severity margin M: 1 (same units as incremental slope)
+Cumulative exceedance count threshold: EC > 1 (at least two exceedances)
+Counter initialization: once at the start of the evaluated sequence
