@@ -9,7 +9,7 @@ OUTPUT:
     Layer-deformation values
     MLTD time series
     Overall MLTD slope
-    Last-two-point MLTD slope
+    Slope of last two MLTD
 
 1. Extract one image snapshot after completion of each printed layer.
 
@@ -66,7 +66,4 @@ DATA CONVENTIONS:
     Thickness is a positive boundary separation in pixels.
     Steps 5-8 use deformation expressed in percent. 
     slope equations and the LBV of 2.42.
-    Use measured acquisition times for the overall slope. Define X2 for each
-    layer as in the manuscript, rather than using the second CSV row blindly.
-    Keep missing measurements missing; do not replace them with zero.
-    Step 9 describes possible workflow outputs, not files all deposited here.
+    Use measured acquisition times for the overall slope. 
